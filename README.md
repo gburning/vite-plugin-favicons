@@ -42,15 +42,6 @@ to generate favicons with manifest files from yor source image. Nothing more, no
 
 You're free to contribute to this project by submitting [issues](https://github.com/gburning/vite-plugin-favicon/issues) and/or [pull requests](https://github.com/gburning/vite-plugin-favicon/pulls).
 
-### TODO
-
--   [x] Refactor to use TypeScript
--   [x] Fix issues when using dev server
--   [ ] Re-build in watch mode when source changes
--   [ ] Implement semantic-release
--   [ ] Add tests
--   [ ] Use https://vite.dev/guide/env-and-mode.html#html-constant-replacement for html replacement instead?
-
 ## License
 
 This project is licensed under [MIT](https://github.com/gburning/vite-plugin-favicon/blob/latest/LICENSE).

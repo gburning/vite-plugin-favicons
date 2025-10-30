@@ -1,0 +1,6 @@
+✔ Refactor to use TypeScript @done(25-10-30 16:45)
+✔ Fix issues when using dev server @done(25-10-30 16:45)
+☐ Re-build in watch mode when source changes
+☐ Implement semantic-release
+☐ Add tests
+☐ Use https://vite.dev/guide/env-and-mode.html#html-constant-replacement for html replacement instead?
