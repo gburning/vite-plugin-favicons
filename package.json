@@ -1,6 +1,6 @@
 {
     "name": "@gburning/vite-plugin-favicons",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "MIT",
     "description": "Simple Vite plugin to generate favicons from source image. Nothing more, nothing less.",
     "contributors": [
