@@ -4,3 +4,4 @@
 ☐ Implement semantic-release
 ☐ Add tests
 ☐ Use https://vite.dev/guide/env-and-mode.html#html-constant-replacement for html replacement instead?
+☐ Add explanations of options from https://github.com/itgalaxy/favicons to options object
