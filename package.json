@@ -56,10 +56,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/peterekjs/vite-plugin-favicons.git"
+        "url": "git+https://github.com/gburning/vite-plugin-favicons.git"
     },
     "bugs": {
-        "url": "https://github.com/peterekjs/vite-plugin-favicons/issues"
+        "url": "https://github.com/gburning/vite-plugin-favicons/issues"
     },
-    "homepage": "https://github.com/peterekjs/vite-plugin-favicons#readme"
+    "homepage": "https://github.com/gburning/vite-plugin-favicons#readme"
 }
