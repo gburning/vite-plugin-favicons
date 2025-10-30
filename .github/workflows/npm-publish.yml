@@ -36,6 +36,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Build package
+        run: npm run build
+
       - name: Publish package
         run: npm publish --provenance --access public
         env:
