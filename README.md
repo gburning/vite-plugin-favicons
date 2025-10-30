@@ -1,44 +1,60 @@
-# @peterek/vite-plugin-favicons
+# @gburning/vite-plugin-favicons
+
 Simple Vite plugin using [favicons](https://github.com/itgalaxy/favicons) library under the hood
 to generate favicons with manifest files from yor source image. Nothing more, nothing less.
 
 1. Add plugin to your Vite configuration
+
     ```js
     // vite.config.js
-    import favicons from '@peterek/vite-plugin-favicons'
+    import favicons from "@gburning/vite-plugin-favicons"
 
     export default {
-      plugins: [
-        favicons('src/assets/icon.svg')
-      ]
+        plugins: [favicons("src/assets/icon.svg")],
     }
     ```
 
 1. Then just enter `<!-- FAVICONS -->` comment at the end of head section in the `index.html` file
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Vite app</title>
-    <!-- FAVICONS -->
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>My Vite app</title>
+        <!-- FAVICONS -->
+    </head>
+    <body>
+        <div id="app"></div>
+        <script
+            type="module"
+            src="/src/main.ts"
+        ></script>
+    </body>
 </html>
-
 ```
-
 
 ## Contribution
 
-You're free to contribute to this project by submitting [issues](https://github.com/josh-hemphill/vite-plugin-favicon/issues) and/or [pull requests](https://github.com/josh-hemphill/vite-plugin-favicon/pulls).
+You're free to contribute to this project by submitting [issues](https://github.com/gburning/vite-plugin-favicon/issues) and/or [pull requests](https://github.com/gburning/vite-plugin-favicon/pulls).
+
+### TODO
+
+-   [x] Refactor to use TypeScript
+-   [x] Fix issues when using dev server
+-   [ ] Re-build in watch mode when source changes
+-   [ ] Implement semantic-release
+-   [ ] Add tests
+-   [ ] Use https://vite.dev/guide/env-and-mode.html#html-constant-replacement for html replacement instead?
 
 ## License
 
-This project is licensed under [MIT](https://github.com/josh-hemphill/vite-plugin-favicon/blob/latest/LICENSE).
+This project is licensed under [MIT](https://github.com/gburning/vite-plugin-favicon/blob/latest/LICENSE).
 
 [favicons]: https://github.com/haydenbleasel/favicons
+
+Based on (`@peterekjs/vite-plugin-favicons`)[https://github.com/peterekjs/vite-plugin-favicons]

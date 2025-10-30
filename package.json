@@ -1,53 +1,65 @@
 {
-  "name": "@peterek/vite-plugin-favicons",
-  "version": "2.1.0",
-  "license": "MIT",
-  "description": "Simple Vite plugin to generate favicons from source image. Nothing more, nothing less.",
-  "author": {
-    "name": "Jiri Peterek",
-    "email": "jiri@peterek.net"
-  },
-  "keywords": [
-    "vite-plugin",
-    "favicon",
-    "favicons",
-    "image",
-    "ico",
-    "icon",
-    "generate",
-    "generator"
-  ],
-  "files": [
-    "index.cjs",
-    "index.mjs",
-    "index.d.ts",
-    "hooks/*",
-    "lib/*"
-  ],
-  "main": "index.cjs",
-  "exports": {
-    "import": "./index.mjs"
-  },
-  "module": "index.mjs",
-  "types": "index.d.ts",
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "dependencies": {
-    "favicons": "^7.1.5"
-  },
-  "devDependencies": {
-    "vite": "^6.0.7"
-  },
-  "peerDependencies": {
-    "vite": ">=5.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/peterekjs/vite-plugin-favicons.git"
-  },
-  "bugs": {
-    "url": "https://github.com/peterekjs/vite-plugin-favicons/issues"
-  },
-  "homepage": "https://github.com/peterekjs/vite-plugin-favicons#readme"
+    "name": "@gburning/vite-plugin-favicons",
+    "version": "2.1.0",
+    "license": "MIT",
+    "description": "Simple Vite plugin to generate favicons from source image. Nothing more, nothing less.",
+    "contributors": [
+        {
+            "name": "Jiri Peterek",
+            "email": "jiri@peterek.net"
+        },
+        {
+            "name": "Gabriel Burning"
+        }
+    ],
+    "keywords": [
+        "vite-plugin",
+        "favicon",
+        "favicons",
+        "image",
+        "ico",
+        "icon",
+        "generate",
+        "generator"
+    ],
+    "type": "module",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.cts",
+    "exports": {
+        "import": {
+            "default": "./dist/index.mjs",
+            "types": "./dist/index.d.mts"
+        },
+        "require": {
+            "default": "./dist/index.cjs",
+            "types": "./dist/index.d.cts"
+        }
+    },
+    "scripts": {
+        "build": "pkgroll"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "favicons": "^7.1.5"
+    },
+    "devDependencies": {
+        "@types/node": "^24.9.2",
+        "pkgroll": "^2.20.1",
+        "typescript": "^5.9.3",
+        "vite": "^6.0.7"
+    },
+    "peerDependencies": {
+        "vite": ">=5.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/peterekjs/vite-plugin-favicons.git"
+    },
+    "bugs": {
+        "url": "https://github.com/peterekjs/vite-plugin-favicons/issues"
+    },
+    "homepage": "https://github.com/peterekjs/vite-plugin-favicons#readme"
 }
